@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Site com Cartões</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+
+        main {
+            padding: 40px;
+        }
+
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+         .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+        }
+
+
+        #cartao1 {
+            background-color: #5BDDDA;
+            color:#320292;
+        }
+
+
+        #cartao2 {
+            background-color: #26003E;
+            color:#EC54C6;
+        }
+
+
+        #cartao3 {
+            background-color: #88FF98;
+            color:#C71F01;
+        }
+
+
+        #cartao4 {
+            background-color: #CBFF87;
+            color:#FA0505;
+        }
+
+
+        #cartao5 {
+            background-color: #FFFF48;
+            color:#0D05FA;
+        }
+
+
+        #cartao6 {
+            background-color: #804391;
+            color:#7BD78B;
+        }
+
+
+        #cartao7 {
+            background-color: #914943;
+            color:#C57600;
+        }
+
+
+        #cartao8 {
+            background-color: #FF8484;
+            color:#00A2FF;
+        }
+     
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <header>
+        <h1>Meu Site</h1>
+        <p>Exemplo de página semântica com cartões</p>
+    </header>
+
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+
+    <main>
+        <div class="cartoes">
+
+
+            <div class="cartao" id="cartao1">
+                <h2>Cartão 1</h2>
+                <p>"Não se preocupe em entender, viver ultrapassa qualquer entendimento."
+
+
+                    Razão de contraste:8.21
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao2">
+                <h2>Cartão 2</h2>
+                <p>"Embora ninguém possa voltar atrás e fazer um novo começo, qualquer um pode começar agora e fazer um novo fim."
+
+
+                     Razão de Contraste:5.77
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao3">
+                <h2>Cartão 3</h2>
+                <p> "E lembre-se, com grandes poderes vêm grandes responsabilidades."
+                     Razão de Contraste:4.64
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao4">
+                <h2>Cartão 4</h2>
+                <p>"Apesar de você, amanhã há de ser outro dia"
+                     Razão de Contraste:3.58
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao5">
+                <h2>Cartão 5</h2>
+                <p> "O que não provoca minha morte faz com que eu fique mais forte."
+                     Razão de Contraste:8.12
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao6">
+                <h2>Cartão 6</h2>
+                <p>"Na vida, não existe nada a temer, mas a entender"
+                    Razão de Contraste:3.81
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao7">
+                <h2>Cartão 7</h2>
+                <p>"Viver é enfrentar um problema atrás do outro. O modo como você o encara é que faz a diferença."
+                     Razão de Contraste:1.84
+                </p>
+            </div>
+
+
+            <div class="cartao" id="cartao8">
+                <h2>Cartão 8</h2>
+                <p>"Pouco conhecimento faz com que as pessoas se sintam orgulhosas. Muito conhecimento, com que se sintam humildes."
+                     Razão de Contraste:1.17
+                </p>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>© 2026 - Meu Site</p>
+    </footer>
+
+
+</body>
+</html>
